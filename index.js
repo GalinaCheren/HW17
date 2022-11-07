@@ -89,4 +89,5 @@ console.log(`добуток позитивних елементів: ${multPosit
 
 let maxElement = array.reduce((accum, item) => (accum > item ? accum : item));
 console.log(maxElement);
-console.log(array.splice(0, array.indexOf(maxElement) + 1));
+console.log(array.map((item) => (item === maxElement ? maxElement : 0)));
+// console.log(array.splice(0, array.indexOf(maxElement) + 1)); - удеалене всех элементов, после максимкального
